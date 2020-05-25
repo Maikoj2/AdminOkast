@@ -6,6 +6,8 @@ import { appRouting } from './app.routes';
 
 // modulos
 import { PagesModule } from './page/page.modulo';
+//temporal
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -16,17 +18,21 @@ import { RegisterComponent } from './login/register/register.component';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NopagefoundComponent
+    NopagefoundComponent,
+    
   ],
   imports: [
     BrowserModule,
     appRouting,
-    PagesModule
+    PagesModule,
+    FormsModule
     
   ],
   providers: [],

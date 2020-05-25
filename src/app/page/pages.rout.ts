@@ -7,15 +7,15 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 const PAGES_ROUTES: Routes = [
     {
         path: '',
-       component: PagesComponent,
-       children:[
-           { path: 'dashboard', component: DashboardComponent },
-           { path: 'progress', component: ProgressComponent },
-           { path: 'graficas1', component: Graficas1Component },
-           { path: '', redirectTo:'/dashboard', pathMatch:'full' },
+        component: PagesComponent,
+        children: [
+            { path: 'dashboard', component: DashboardComponent },
+            { path: 'progress', component: ProgressComponent },
+            { path: 'graficas1', component: Graficas1Component },
+            { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 
-       ] 
-       }
+        ]
+    }
 ];
 
 export const pagesRoutes = RouterModule.forChild(PAGES_ROUTES);
