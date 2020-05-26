@@ -11,6 +11,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { ChartsModule } from 'ng2-charts';
 import { IngraficoDonaComponent } from '../components/ingrafico-dona/ingrafico-dona.component';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxsjComponent } from './rxsj/rxsj.component';
 
 // temporal
 
@@ -22,7 +24,9 @@ declarations:[
     Graficas1Component,
     IngraficoDonaComponent,
     IncrementadorComponent,
-    AccoutSettingsComponent
+    AccoutSettingsComponent,
+    PromesasComponent,
+    RxsjComponent
 ],
 exports:[
     DashboardComponent,

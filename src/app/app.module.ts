@@ -21,13 +21,12 @@ import { RegisterComponent } from './login/register/register.component';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NopagefoundComponent,
+    NopagefoundComponent
     
     
   ],
