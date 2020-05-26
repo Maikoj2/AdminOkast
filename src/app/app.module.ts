@@ -5,7 +5,9 @@ import { NgModule } from '@angular/core';
 import { appRouting } from './app.routes';
 
 // modulos
+import { ServiceModule } from './servise/service.module';
 import { PagesModule } from './page/page.modulo';
+
 //temporal
 import { FormsModule } from '@angular/forms';
 
@@ -27,12 +29,14 @@ import { RegisterComponent } from './login/register/register.component';
     RegisterComponent,
     NopagefoundComponent,
     
+    
   ],
   imports: [
     BrowserModule,
     appRouting,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
     
   ],
   providers: [],

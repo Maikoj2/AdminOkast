@@ -10,6 +10,7 @@ import { pagesRoutes } from './pages.rout';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { ChartsModule } from 'ng2-charts';
 import { IngraficoDonaComponent } from '../components/ingrafico-dona/ingrafico-dona.component';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 // temporal
 
@@ -20,7 +21,8 @@ declarations:[
     PagesComponent,
     Graficas1Component,
     IngraficoDonaComponent,
-    IncrementadorComponent
+    IncrementadorComponent,
+    AccoutSettingsComponent
 ],
 exports:[
     DashboardComponent,

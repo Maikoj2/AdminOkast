@@ -24,7 +24,7 @@ export class IncrementadorComponent implements OnInit {
   }
   onchage(newvalue){
 
-    // let elemhtml: any = document.getElementsByName('progreso')[0] ;
+   // let elemhtml: any = document.getElementsByName('progreso')[0] ;
 
     
 
@@ -48,17 +48,16 @@ export class IncrementadorComponent implements OnInit {
     if (this.procentaje >= 100 && valor > 0) {
 
       this.procentaje = 100;
-      console.log(this.procentaje);
       return ;
       
     } 
     if (this.procentaje <= 0 && valor<0) {
       this.procentaje = 0;
-      console.log(this.procentaje);
       return ;
       
     } 
     this.procentaje += valor;
+    this.onchage(this.procentaje)
     this.txtprogress.nativeElement.focus();
       
 }
