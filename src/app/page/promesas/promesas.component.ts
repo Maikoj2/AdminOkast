@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { resolve } from 'dns';
-import { interval } from 'rxjs';
-import { threadId } from 'worker_threads';
+
 
 
 @Component({

@@ -6,11 +6,13 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxsjComponent } from './rxsj/rxsj.component';
+import { LoginguardGuard } from '../servise/servise.index';
 
 const PAGES_ROUTES: Routes = [
     {
         path: '',
         component: PagesComponent,
+        canActivate:[LoginguardGuard],
         children: [
             { path: 'dashboard', component: DashboardComponent,data:{ titulos:'dashboar'} },
             { path: 'progress', component: ProgressComponent ,data:{ titulos:' pagina de barras dinamicas' }},

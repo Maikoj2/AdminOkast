@@ -9,12 +9,14 @@ import { ServiceModule } from './servise/service.module';
 import { PagesModule } from './page/page.modulo';
 
 //temporal
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './login/register/register.component';
+
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
-import { RegisterComponent } from './login/register/register.component';
 
 
 
@@ -35,7 +37,8 @@ import { RegisterComponent } from './login/register/register.component';
     appRouting,
     PagesModule,
     FormsModule,
-    ServiceModule
+    ServiceModule,
+    ReactiveFormsModule,
     
   ],
   providers: [],
